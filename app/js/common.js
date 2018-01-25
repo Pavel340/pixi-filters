@@ -101,8 +101,8 @@ app.stage
 	.on('touchmove', onPointerMove);
 
 function onPointerMove(data) {
-	pinch.center.x = data.global.x/window.innerWidth;
-	pinch.center.y = data.global.y/window.innerHeight;
+	pinch.center.x = data.data.global.x/window.innerWidth;
+	pinch.center.y = data.data.global.y/window.innerHeight;
 }
 
 $(function() {
